@@ -1,0 +1,208 @@
+body > div.content > div > div.table-container > table > thead {
+    background-color: #000000; /* Black background color */
+    color: #ffffff; /* White text color for contrast */
+}
+
+.container {
+    max-width: 1500px;
+    margin: auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    text-align: left;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #151616;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search-input {
+    width: 300px;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+}
+
+.buttons .btn {
+    background-color: #7d968a;
+    color: #f1eded; /* Change this to your desired color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+
+
+.buttons .btn:hover {
+    background-color: #357ABD;
+}
+
+.date-filter {
+    margin-bottom: 20px;
+}
+
+.date-filter label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+#dateFilter {
+    padding: 8px 12px;
+    font-size: 1em;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    margin-right: 10px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+}
+
+#dateFilter:focus {
+    border-color: #4a90e2;
+}
+
+#customDateRange {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#customDateRange label {
+    font-weight: bold;
+}
+
+#customDateRange input[type="date"] {
+    padding: 8px 12px;
+    font-size: 1em;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+}
+
+#customDateRange input[type="date"]:focus {
+    border-color: #17181a;
+}
+
+.pagination {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pagination label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.items-select {
+    padding: 8px 12px;
+    font-size: 1em;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+}
+
+.items-select:focus {
+    border-color: #4a90e2;
+}
+
+.table-container {
+    margin-top: 20px;
+    overflow-x: auto;
+}
+
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.styled-table thead tr {
+    background-color: #000000; /* Black background color */
+    color: #ffffff; /* White text color */
+    text-align: left;
+    font-weight: bold;
+}
+
+.styled-table th, .styled-table td {
+    padding: 12px 15px;
+    border: 1px solid #dddddd;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #1b1c1d;
+}
+
+.header-filter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-filter input[type="text"] {
+    width: 150px;
+    padding: 6px 10px;
+    font-size: 0.9em;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    margin-left: 10px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+}
+
+.header-filter input[type="text"]:focus {
+    border-color: #17181a;
+}
+
+#paginationControls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#paginationControls button {
+    padding: 8px 16px;
+    font-size: 1em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#paginationControls button:disabled {
+    background-color: #dddddd;
+    cursor: not-allowed;
+}
+
+#paginationControls button:not(:disabled):hover {
+    background-color: #4a90e2;
+    color: #ffffff;
+}
+
+#recordsDisplayCount {
+    font-size: 1em;
+    font-weight: bold;
+}

@@ -1,0 +1,316 @@
+/* General Styles */
+body.dark-mode {
+    background-color: #f9fafb;
+    color: #111827;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+/* Header Styling */
+.bg-dark-header {
+    background-color: hsl(215.4, 16.3%, 46.9%); /* Muted blue background */
+    color: #ffffff; /* White text color */
+    height: 30px; /* Specific height */
+    padding: 30px 40px; /* Adjust padding for internal space */
+    display: flex;
+    align-items: center; /* Center content vertically */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Typography */
+.text-2xl {
+    font-size: 1.875rem;
+    font-weight: 700; /* Bold */
+    margin-bottom: 1.5rem;
+}
+
+/* Form Styling */
+.add-product-form {
+    background-color: hsl(240, 4.9%, 83.9%); /* Very light, muted blue background */
+    color: #ffffff; /* White text color */
+    padding: 1.5rem; /* Extra padding */
+    border-radius: 0.75rem; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin: 2rem 0; /* Vertical margin */
+}
+
+input[type="text"], 
+input[type="number"] {
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #9ca3af;
+    border-radius: 0.75rem;
+    color: #1f2937;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    margin-bottom: 1rem;
+    width: 100%; /* Full width of the parent container */
+    max-width: 400px; /* Maximum width */
+    box-sizing: border-box; /* Include padding and border in the width */
+}
+
+/* Button Styling */
+button, 
+input[type="submit"] {
+    background-color: hsl(19.6, 95%, 53.1%); /* Bright orange background */
+    color: white;
+    font-size: 1rem;
+    padding: 1rem 3rem; /* Larger padding */
+    border: none;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    
+}
+
+button:hover, 
+input[type="submit"]:hover {
+    background-color: #16a34a; /* Darker green on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Deeper shadow */
+}
+
+/* Section Styling */
+.filter-download-section {
+    background-color: #d1d5db; /* Very light gray background */
+    padding: 1.5rem; /* Extra padding */
+    border-radius: 0.75rem; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Distribute space between items */
+    gap: 1rem; /* Space between items */
+    margin-top: 1.5rem; /* Top margin */
+    padding: 1rem 3rem; /* Larger padding */
+}
+
+/* Search Box */
+#searchInput {
+    flex-grow: 1; /* Make search input grow to fill available space */
+    padding: 1rem; /* Increase padding to increase height */
+    font-size: 1.2rem; /* Increase font size */
+    border-radius: 0.75rem; /* Increase border radius for more rounded corners */
+    border: 1px solid #9ca3af; /* Medium gray border */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    box-sizing: border-box; /* Include padding and border in the width */
+    max-width: 80%; /* Ensure it takes up full available width */
+    min-height: 50px; /* Set a minimum height */
+    margin:auto;
+
+}
+
+
+
+/* Download Excel Button */
+.download-excel {
+    background-color: hsl(19.6, 95%, 53.1%); /* Bright orange background */
+    color: white;
+    font-size: 1rem;
+    padding: 0.5rem 2rem; /* Smaller padding for a shorter button */
+    border: none;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    height: 40px; /* Set a specific height */
+}
+
+.download-excel:hover {
+    background-color: #2563eb; /* Darker blue on hover */
+}
+
+
+/* Highly specific selector */
+#itemsPerPage.p-2.border.rounded {
+    width: 100px;
+    padding: 0.75rem 1rem;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+    border: 1px solid #9ca3af;
+    background-color: #ffffff;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    height: 50px;
+
+}
+
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1.5rem;
+    background-color: #ffffff; /* White background */
+    border-radius: 0.75rem; /* Rounded corners */
+    overflow: hidden; /* Ensure rounded corners apply */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+th, 
+td {
+    padding: 1rem; /* Ensure the padding is consistent */
+    text-align: left;
+    border-bottom: 2px solid #e5e7eb; /* Light gray border */
+    color: #1f2937; /* Dark text color */
+    vertical-align: middle; /* Vertically center content */
+}
+
+thead th {
+    background-color: #d1d5db; /* Slightly darker header */
+    color: #111827; /* Darker text */
+    font-weight: 700; /* Bold header text */
+    text-transform: uppercase; /* Uppercase headers */
+    font-size: 0.875rem; /* Smaller font size */
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9fafb; /* Very light gray for even rows */
+}
+
+/* Fixed Widths for Columns */
+th.p-2, 
+td.p-2 {
+    width: 120px; /* Adjust the width to ensure proper alignment */
+    text-align: left; /* Ensure the text alignment is the same for both th and td */
+}
+
+/* Ensure Actions Column is Auto Width */
+th.p-2:last-child, 
+td.p-2:last-child {
+    text-align: right; /* Align the last column (Actions) content to the right */
+    width: auto; /* Let the last column (Actions) adjust naturally */
+}
+
+/* Action Buttons in Table */
+.flex {
+    display: flex;
+    gap: 0.5rem; /* Space between buttons */
+    justify-content: flex-end; /* Align buttons to the right */
+    align-items: center;
+}
+
+.edit-button, 
+.delete-button {
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 0.875rem; /* Smaller font size */
+    font-weight: 500; /* Medium font weight */
+    text-transform: uppercase;
+    letter-spacing: 0.05em; /* Slightly increased letter spacing */
+    transition: background-color 0.3s ease;
+}
+
+.edit-button {
+    background-color: #3b82f6; /* ShadCN Blue */
+    color: white;
+}
+
+.edit-button:hover {
+    background-color: #2563eb; /* Darker blue on hover */
+}
+
+.delete-button {
+    background-color: #ef4444; /* Red background */
+    color: white;
+}
+
+.delete-button:hover {
+    background-color: #dc2626; /* Darker red on hover */
+}
+
+/* Toast Notification */
+.toast {
+    visibility: hidden;
+    min-width: 250px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 20px;
+    font-size: 17px;
+    opacity: 0;
+    transition: opacity 0.6s, top 0.6s;
+}
+
+.toast.show {
+    visibility: visible;
+    opacity: 1;
+    top: 50px;
+}
+
+/* Confirm Delete Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 300px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-button {
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+}
+
+.modal-button.confirm {
+    background-color: #28a745;
+    color: white;
+}
+
+.modal-button.cancel {
+    background-color: #dc3545;
+    color: white;
+}
+
+
+th.p-2:nth-child(1), 
+td.p-2:nth-child(1) {
+    width: 50px; /* Smaller width for the ID column */
+}
+
+/* Make the Název column larger */
+th.p-2:nth-child(2), 
+td.p-2:nth-child(2) {
+    width: 300px; /* Larger width for the Název column */
+}
+

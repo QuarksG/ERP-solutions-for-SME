@@ -1,0 +1,101 @@
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    transition: max-width 0.5s ease-in-out; /* Smooth transition */
+}
+
+.container.expanded {
+    max-width: 60%; /* Expand to 60% of the window width */
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #333;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2x2 grid layout */
+    gap: 20px;
+}
+
+.card {
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.card:nth-child(2) {
+    background-color: #2196F3; /* Blue background */
+}
+
+.card:nth-child(3) {
+    background-color: #FF9800; /* Orange background */
+}
+
+.card:nth-child(4) {
+    background-color: #F44336; /* Red background */
+}
+
+.card:nth-child(5) {
+    background-color: #9C27B0; /* Purple background for chart */
+}
+
+.card-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.card-value {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#bar-chart {
+    background-color: #ffffff; /* White background for better contrast */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.trader-table {
+    overflow-x: auto;
+}
+
+.trader-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background-color: #333; /* Dark background for better contrast */
+    color: white;
+}
+
+.trader-table th, .trader-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #444; /* Lighter border for better contrast */
+}
+
+.trader-table th {
+    background-color: #444; /* Slightly different background for headers */
+    font-weight: bold;
+}
+
+.trader-table td {
+    background-color: #555; /* Slightly different background for table data */
+}
+
+.trader-table tbody tr:hover {
+    background-color: #666; /* Highlight the row on hover */
+}
