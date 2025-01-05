@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+    <styles>
+        <css>
+            Ym9keSB7CiAgICBmb250LWZhbWlseTogQXJpYWwsIHNhbnMtc2VyaWY7CiAgICBsaW5lLWhlaWdodDogMS41OwogICAgbWFyZ2luOiAwOwogICAgcGFkZGluZzogMjBweDsKfQoKLmNvbnRhaW5lciB7CiAgICBkaXNwbGF5OiBmbGV4OwogICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuOwp9CgouY29sdW1uIHsKICAgIHdpZHRoOiAyNCU7CiAgICBwYWRkaW5nOiAxMHB4OwogICAgYm94LXNpemluZzogYm9yZGVyLWJveDsKfQoKaDMgewogICAgbWFyZ2luLXRvcDogMDsKICAgIGZvbnQtc2l6ZTogMTZweDsKICAgIGZvbnQtd2VpZ2h0OiBib2xkOwp9CgoudW5kZXJsaW5lIHsKICAgIGRpc3BsYXk6IGlubGluZS1ibG9jazsKICAgIGJvcmRlci1ib3R0b206IDFweCBzb2xpZCBibGFjazsKICAgIG1hcmdpbi1ib3R0b206IDEwcHg7Cn0K
+        </css>
+    </styles>
+    <container>
+        <establishment name="Objednávky 1">
+            <address>Adresa 1</address>
+            <item code="Typ 1" quantity="10">Položka 1</item>
+            <item code="Typ 2" quantity="20">Položka 2</item>
+        </establishment>
+        <establishment name="Objednávky 2">
+            <address>Adresa 2</address>
+            <item code="Typ 3" quantity="15">Položka 3</item>
+            <item code="Typ 4" quantity="30">Položka 4</item>
+        </establishment>
+    </container>
+</document>
