@@ -1,5 +1,7 @@
 The app designed by my one of client, thus this is the costumized app hosted in Hostinger, the language and other design was asked by the user, the compnay asked single tenant app. The login system is as per below
 
+                The admin and other users differenation mind  map           
+                             
                              ┌───────────────┐
                              │   ayarlar.php  │
                              └───────────────┘
