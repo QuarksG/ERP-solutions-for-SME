@@ -36,7 +36,7 @@ The app designed by my one of client, thus this is the costumized app hosted in 
                      ▼
        ┌────────────────────────────────────────────────────────────────┐
        │ Query `login` table by `username`                             │
-       │  - If user found, compare $password with $user['pwd']         │
+       │  - If user found, compare $password with $user['psw']         │
        │  - If match and $user['role'] == 'admin':                     │
        │       => $_SESSION['username'] = $user['username']            │
        │       => $_SESSION['role'] = $user['role']                    │
